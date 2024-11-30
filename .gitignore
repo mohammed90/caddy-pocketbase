@@ -23,3 +23,13 @@ go.work.sum
 
 # env file
 .env
+
+vendor
+*.json
+Caddyfile
+
+# the executable 
+caddy
+
+# the test/dev data
+pb_data
