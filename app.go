@@ -41,8 +41,7 @@ type pb interface {
 //		"email_address": "...",
 //		"password": "..."
 //	}
-//
-// ```
+//	```
 //
 // The `DELETE` endpoint does not expect the `password` field.
 //
@@ -52,11 +51,13 @@ type pb interface {
 //
 // The app can be configured in the Caddyfile through the `pocketbase` block in the global options section. Syntax:
 //
+//	```
 //	pocketbase {
 //	    data_dir <path>
 //	    listen   <addr>
 //	    origins  <origin...>
 //	}
+//	```
 //
 // If the block is omitted, the default values are used.
 type App struct {
