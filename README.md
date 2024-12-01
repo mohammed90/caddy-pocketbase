@@ -1,6 +1,6 @@
 # Caddy PocketBase Module
 
-A Caddy module that integrates PocketBase as a Caddy application, allowing you to run PocketBase embedded in your Caddy server.
+A Caddy module that integrates [PocketBase](https://pocketbase.io/)([Repository](https://github.com/pocketbase/pocketbase)) as a Caddy application, allowing you to run PocketBase embedded in your Caddy server.
 
 ## Features
 
