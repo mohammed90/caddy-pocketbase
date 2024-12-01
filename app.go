@@ -36,12 +36,10 @@ type pb interface {
 // All the above endpoints require a JSON payload, except for the OTP endpoint. The
 // JSON payload for the superuser endpoints is as follows:
 //
-//	```
 //	{
 //		"email_address": "...",
 //		"password": "..."
 //	}
-//	```
 //
 // The `DELETE` endpoint does not expect the `password` field.
 //
@@ -51,13 +49,11 @@ type pb interface {
 //
 // The app can be configured in the Caddyfile through the `pocketbase` block in the global options section. Syntax:
 //
-//	```
 //	pocketbase {
 //	    data_dir <path>
 //	    listen   <addr>
 //	    origins  <origin...>
 //	}
-//	```
 //
 // If the block is omitted, the default values are used.
 type App struct {
