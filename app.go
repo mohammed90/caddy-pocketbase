@@ -45,7 +45,7 @@ type pb interface {
 //
 // Although PocketBase prints a URL in the logs to create the first superuser, the host
 // part of the URL is not correct. You can either replace the host part with the host defined in
-// your Caddy configuration, or use the admin APII endpoint to create the first superuser.
+// your Caddy configuration, or use the admin API endpoint to create the first superuser.
 //
 // The app can be configured in the Caddyfile through the `pocketbase` block in the global options section. Syntax:
 //
