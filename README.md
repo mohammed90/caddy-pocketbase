@@ -10,6 +10,24 @@ A Caddy module that integrates [PocketBase](https://pocketbase.io/)([Repository]
 - Automatic port allocation if none specified
 - Full integration with Caddy's configuration and lifecycle
 
+## Build
+
+There are 2 ways to build.
+
+This is the easiest:
+
+
+```sh
+cd cmd && go build .
+```
+
+If your into xcaddy:
+
+```sh
+xcaddy --with github.com/mohammed90/caddy-pocketbase
+```
+
+
 ## Configuration
 
 Example Caddyfile configuration:
