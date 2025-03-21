@@ -23,6 +23,29 @@ example.com {
 }
 ```
 
+The embedded pocketbase app can be customized (with limitations) as follows:
+
+```caddyfile
+{
+	pocketbase {
+		# optional: port pocketbase will listen to; defaults to randomly allocated port.
+		listen 8080
+		
+		# optional: default data directory; defaults to ./pb_data.
+		data_dir /var/pb
+
+		# optional: all origins allowed when empty; defaults to all origins.
+		origins example.com example.net localhost
+	}
+	order pocketbase before file_server
+}
+
+example.com {
+	pocketbase
+}
+
+```
+
 ## Key Components
 
 - **PocketBase Integration**: Runs PocketBase within Caddy.
