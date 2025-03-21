@@ -1,12 +1,10 @@
 package caddypocketbase
 
 import (
-	"github.com/caddyserver/caddy/v2"
 	"github.com/caddyserver/caddy/v2/caddyconfig"
 	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
 	"github.com/caddyserver/caddy/v2/caddyconfig/httpcaddyfile"
 	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
-	"go.uber.org/zap"
 )
 
 func init() {
@@ -38,9 +36,7 @@ func (h *Handler) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
 func parseGlobalOption(d *caddyfile.Dispenser, existingVal any) (any, error) {
 	app := new(App)
 	d.Next()
-	caddy.Log().Info("parseGlobalOption")
 	for d.NextBlock(0) {
-		caddy.Log().Info("in loop", zap.String("directive", d.Val()))
 		switch d.Val() {
 		case "data_dir":
 			if !d.NextArg() {
