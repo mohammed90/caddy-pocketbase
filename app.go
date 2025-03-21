@@ -99,7 +99,7 @@ func (a *App) Provision(ctx caddy.Context) error {
 
 	if a.DataDir == "" {
 		a.DataDir = filepath.Join(caddy.DefaultStorage.Path, "pb_data")
-		if err := os.MkdirAll(a.DataDir, 0o7044); err != nil {
+		if err := os.MkdirAll(a.DataDir, 0o744); err != nil {
 			return fmt.Errorf("not able to create data_dir: %w", err)
 		}
 	}
