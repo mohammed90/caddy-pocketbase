@@ -9,8 +9,8 @@ import (
 
 	"github.com/caddyserver/caddy/v2"
 	"github.com/go-ozzo/ozzo-validation/v4/is"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tools/security"
+	"ganigeorgiev.com/pocketbase/pocketbase/core"
+	"ganigeorgiev.com/pocketbase/pocketbase/tools/security"
 	"go.uber.org/zap"
 )
 
