@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 
 	"github.com/caddyserver/caddy/v2"
-	"github.com/pocketbase/pocketbase"
-	"github.com/pocketbase/pocketbase/apis"
-	"github.com/pocketbase/pocketbase/core"
+	"ganigeorgiev.com/pocketbase/pocketbase"
+	"ganigeorgiev.com/pocketbase/pocketbase/apis"
+	"ganigeorgiev.com/pocketbase/pocketbase/core"
 	"golang.org/x/sync/errgroup"
 )
 
